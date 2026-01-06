@@ -1,4 +1,10 @@
 
-// File này có thể để trống hoặc xóa vì code khởi tạo đã nằm trong index.html 
-// để tương thích tối đa với loader của GitHub Pages.
-export {};
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App.tsx';
+
+const container = document.getElementById('root');
+if (container) {
+  const root = createRoot(container);
+  root.render(<App />);
+}
