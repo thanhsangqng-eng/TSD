@@ -2,9 +2,11 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { ExtractedData } from "../types";
 
+// Always use const ai = new GoogleGenAI({apiKey: process.env.API_KEY});
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const extractCCCDData = async (base64Image: string): Promise<ExtractedData> => {
+  // Use 'gemini-3-flash-preview' for basic text/OCR tasks as per guidelines
   const model = 'gemini-3-flash-preview';
 
   const prompt = `
@@ -49,6 +51,7 @@ export const extractCCCDData = async (base64Image: string): Promise<ExtractedDat
       },
     });
 
+    // The GenerateContentResponse object features a text property (not a method)
     const resultText = response.text;
     if (!resultText) throw new Error("Không nhận được phản hồi từ AI");
 

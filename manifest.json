@@ -1,9 +1,10 @@
 
 {
   "name": "TS Design CCCD Scanner",
-  "short_name": "TSScanner",
+  "short_name": "TSScan",
   "description": "Quét CCCD và đối soát MySQL",
-  "start_url": ".",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#0f172a",
   "theme_color": "#0f172a",
