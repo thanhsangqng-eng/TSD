@@ -1,0 +1,19 @@
+{
+  "name": "Design Scanner",
+  "short_name": "TSScan",
+  "description": "Hệ thống quét CCCD kết nối MySQL server 103.77.162.39",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3504/3504381.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#0f172a",
+  "background_color": "#0f172a",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
